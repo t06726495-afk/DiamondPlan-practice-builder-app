@@ -20,6 +20,7 @@ rec-league-realistic equipment and throwing distances).
 
 ```bash
 npm install
+cp .env.example .env     # sets DATABASE_URL for the local SQLite file
 npx prisma migrate dev   # creates prisma/dev.db and applies the schema
 npx prisma db seed       # seeds the ~70-drill content library
 npm run dev
